@@ -2,7 +2,7 @@
 import sqlite3
 
 def inicializar_banco():
-    conexao = sqlite3.connect('controle_fila.db')
+    conexao = sqlite3.connect('./src/db/controle_fila.db')
     cursor = conexao.cursor()
 
     cursor.execute('''

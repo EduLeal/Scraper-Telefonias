@@ -40,7 +40,7 @@ def processar_reclamacoes(lista_urls):
                     pagina.goto(url)
                     
                     try: # detector de ad
-                        seletor_anuncio = 'button[data-ra-ads-interstitial-close]'
+                        seletor_anuncio = 'button[data-ra-ads-interstitial-close]' #classe dos anuncios achada durante os testes
                         pagina.wait_for_selector(seletor_anuncio, timeout=3000)
                         pagina.click(seletor_anuncio)
                         print("anuncio fechado")
